@@ -102,7 +102,7 @@
 // |   | MLEFT | MDOWN | MRIGHT |      |     |                   |      | LCLK | RCLK |       |     |    |
 // |   |       |       |        |      |     |        |  |       |      |      |      |       |     |    |
 //                     |        |      |     |        |  |       |      |      |      |
-           label = "Mouse"
+           label = "Mouse";
            bindings = <
 &trans     &trans               &trans                 &trans               &trans       &trans                            &trans      &trans     &trans     &trans     &trans  &trans
 &trans     &trans               &mmv MOVE_VERT(-1500)  &trans               &trans       &trans                            &trans      &trans     &trans     &trans     &trans  &trans
