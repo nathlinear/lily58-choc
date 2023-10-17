@@ -71,19 +71,19 @@
         };
 
         raise_layer {
-// ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-// |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-//                     |      |      |      |        |  |       |      |       |       |
+// -------------------------------------------------------------------------------------------------
+// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |     |     |     |     |     |    |
+// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^  |  &  |  *  |  (  |  )  |    |
+// |       |     |     |  {   |  (   |  [   |                   |  ]  |  )  |  }  |     |  \  |    |
+// |       |     |     |      |  =   |  +   |        |  |       |  _  |  -  |     |     |  |  |    |
+//                     |      |      |      |        |  |       |     |     |     |
             label = "Raise";
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans    &trans    &trans
-&trans     &trans           &trans            &trans            &trans       &trans                       &trans    &trans    &trans          &trans    &trans    &trans
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &trans           &trans            &trans            &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
-                                              &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
+&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                    &trans    &trans    &trans          &trans    &trans    &trans
+&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &trans   
+&trans     &trans           &trans            &kp LBRC          &kp LPAR     &kp LBKT                        &kp RBKT  &kp RPAR  &kp RBRC        &trans    &kp BSLH  &trans
+&trans     &trans           &trans            &trans            &kp EQUAL    &kp PLUS     &trans   &trans    &kp UNDER &kp MINUS &trans          &trans    &kp PIPE  &trans  
+                                              &trans            &trans       &trans       &trans   &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
