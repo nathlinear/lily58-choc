@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &mmv {
-    time-to-max-speed-ms = <200>;
+    time-to-max-speed-ms = <350>;
     acceleration-exponent = <1>;
 };
 
@@ -105,10 +105,10 @@
            label = "Mouse";
            bindings = <
 &trans     &trans               &trans                 &trans               &trans       &trans                            &trans      &trans           &trans         &trans     &trans  &trans
-&trans     &trans               &mmv MOVE_VERT(-1500)  &trans               &trans       &trans                            &trans      &trans           &trans         &trans     &trans  &trans
-&trans     &mmv MOVE_HOR(-1500) &mmv MOVE_VERT(1500)   &mmv MOVE_HOR(1500)  &trans       &trans                            &trans      &mkp LCLK        &mkp RCLK      &trans     &trans  &trans
+&trans     &trans               &mmv MOVE_VERT(-2500)  &trans               &trans       &trans                            &trans      &trans           &trans         &trans     &trans  &trans
+&trans     &mmv MOVE_HOR(-2500) &mmv MOVE_VERT(2500)   &mmv MOVE_HOR(2500)  &trans       &trans                            &trans      &mkp LCLK        &mkp RCLK      &trans     &trans  &trans
 &trans     &trans               &trans                 &trans               &trans       &trans         &trans   &trans    &trans      &mwh SCROLL_DOWN &mwh SCROLL_UP &trans     &trans  &trans
-                                                       &trans               &trans       &trans         &trans   &trans    &trans      &trans                &trans
+                                                       &trans               &trans       &trans         &trans   &trans    &trans      &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
