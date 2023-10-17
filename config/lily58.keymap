@@ -106,7 +106,7 @@
 &trans     &trans               &trans                 &trans               &trans       &trans                            &trans      &trans     &trans     &trans     &trans  &trans
 &trans     &trans               &mmv MOVE_VERT(-1500)  &trans               &trans       &trans                            &trans      &trans     &trans     &trans     &trans  &trans
 &trans     &mmv MOVE_HOR(-1500) &mmv MOVE_VERT(1500)   &mmv MOVE_HOR(1500)  &trans       &trans                            &trans      &mkp LCLK  &mkp RCLK  &trans     &trans  &trans
-&trans     &trans               &trans                 &mtrans              &trans       &trans         &trans   &trans    &trans      &trans     &trans     &trans     &trans  &trans
+&trans     &trans               &trans                 &trans               &trans       &trans         &trans   &trans    &trans      &trans     &trans     &trans     &trans  &trans
                                                        &trans               &trans       &trans         &trans   &trans    &trans      &trans                &trans
             >;
 
