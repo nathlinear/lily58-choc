@@ -13,6 +13,25 @@
     keymap {
         compatible = "zmk,keymap";
 
+        colemak_layer {
+// -----------------------------------------------------------------------------------------------------------
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                     |   6   |  7  |  8  |  9   |   0   | MINUS |
+// |  TAB  |  Q  |  W  |  F   |  P   |  G   |                     |   J   |  L  |  U  |  Y   |   ;   |   =   |
+// |  CTRL |  A  |  R  |  S   |  T   |  D   |                     |   H   |  N  |  E  |  I   |   O   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | Function |  |  "]"  |   K   |  M  |  ,  |  .   |   /   | ENTER |
+//                     | LGUI | ALT  | LOWER|  SPACE   |  | BKSPC | RAISE | DEL | GUI |
+            label = "Colemak";
+            bindings = <
+&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7  &kp N8    &kp N9  &kp N0   &kp MINUS
+&kp TAB   &kp Q  &kp W  &kp F    &kp P    &kp G                      &kp J  &kp L   &kp U     &kp Y   &kp SEMI &kp EQUAL
+&kp LCTRL &kp A  &kp R  &kp S    &kp T    &kp D                      &kp H  &kp N   &kp E     &kp I   &kp O    &kp SQT
+&kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &trans     &kp RBKT &kp K  &kp M   &kp COMMA &kp DOT &kp FSLH &kp RET
+                        &kp LGUI &kp LALT &mo 2  &kp SPACE  &kp BSPC &mo 3  &kp RGUI &kp RGUI
+            >;
+
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        }
+
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
@@ -20,7 +39,7 @@
 // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
-            label = "Base";
+            label = "QWERTY";
             bindings = <
 &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
