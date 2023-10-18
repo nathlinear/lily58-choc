@@ -107,7 +107,7 @@
 &trans     &trans               &trans                 &trans               &trans       &trans                            &trans      &trans                &trans               &trans     &trans  &trans
 &trans     &trans               &mmv MOVE_VERT(-2500)  &trans               &trans       &trans                            &trans      &trans                &trans               &trans     &trans  &trans
 &trans     &mmv MOVE_HOR(-2500) &mmv MOVE_VERT(2500)   &mmv MOVE_HOR(2500)  &trans       &trans                            &trans      &mkp LCLK             &mkp RCLK            &trans     &trans  &trans
-&trans     &trans               &trans                 &trans               &trans       &trans         &trans   &trans    &trans      &mwh SCROLL_VERT(-15) &mwh SCROLL_VERT(15) &trans     &trans  &trans
+&trans     &trans               &trans                 &trans               &trans       &trans         &trans   &trans    &trans      &mwh SCROLL_VERT(-25) &mwh SCROLL_VERT(25) &trans     &trans  &trans
                                                        &trans               &trans       &trans         &trans   &trans    &trans      &trans                &trans
             >;
 
