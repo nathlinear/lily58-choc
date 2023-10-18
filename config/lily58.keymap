@@ -72,14 +72,14 @@
 // |       |     |     |      |     |     |                   |      |       |       |      |       |       |
 // |   `   |  1  |  2  |  3   |  4  |  5  |                   |  6   |   7   |   8   |  9   |   0   |       |
 // |       |     |     | BKSP | RET | DEL |                   |  <-  |   v   |  ^    | ->   |       |       |
-// |       |     |     |      |     |     |        |  |       |      |       |       |      |       |       |
+// |       |     |     |      |     |     |        |  |       | HOME | PGDN  | PGUP  | END  |       |       |
 //                     |      |     |     |        |  |       |      |       |       |
             label = "Lower";
             bindings = <
 &trans    &trans &trans &trans   &trans  &trans                                  &trans      &trans    &trans    &trans    &trans    &trans
 &kp GRAVE &kp N1 &kp N2 &kp N3   &kp N4  &kp N5                                  &kp N6      &kp N7    &kp N8    &kp N9    &kp N0    &trans
 &trans    &trans &trans &kp BSPC &kp RET &kp DEL                                 &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
-&trans    &trans &trans &trans   &trans  &trans    &kp C_VOL_DN  &kp C_VOL_UP    &trans      &trans    &trans    &trans    &trans    &trans
+&trans    &trans &trans &trans   &trans  &trans    &kp C_VOL_DN  &kp C_VOL_UP    &kp HOME    &kp PG_DN &kp PG_UP &kp END   &trans    &trans
                         &trans   &trans  &trans    &trans        &trans          &trans      &trans    &trans
             >;
 
