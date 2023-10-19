@@ -70,14 +70,14 @@
         lower_layer {
 // ----------------------------------------------------------------------------------------------------------
 // |       |     |     |      |     |     |                   |      |       |       |      |       |       |
-// |   `   |  1  |  2  |  3   |  4  |  5  |                   |  6   |   7   |   8   |  9   |   0   |       |
+// |       |  1  |  2  |  3   |  4  |  5  |                   |  6   |   7   |   8   |  9   |   0   |       |
 // |       |     |     |      | BKSP| DEL |                   |  <-  |   v   |  ^    | ->   |       |       |
 // |       |     |     |      | RET |     |        |  |       |      | PGDN  | PGUP  |      |       |       |
 //                     |      |     |     |        |  |       |      |       |       |
             label = "Lower";
             bindings = <
 &trans    &trans &trans &trans   &trans   &trans                                  &trans      &trans    &trans    &trans    &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                                  &kp N6      &kp N7    &kp N8    &kp N9    &kp N0    &trans
+&trans    &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                                  &kp N6      &kp N7    &kp N8    &kp N9    &kp N0    &trans
 &trans    &trans &trans &trans   &kp BSPC &kp DEL                                 &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
 &trans    &trans &trans &trans   &kp RET  &trans    &kp C_VOL_DN  &kp C_VOL_UP    &trans      &kp PG_DN &kp PG_UP &trans    &trans    &trans
                         &trans   &trans   &trans    &trans        &trans          &trans      &trans    &trans
@@ -89,16 +89,16 @@
         raise_layer {
 // -------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |     |     |     |     |     |    |
-// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^  |  &  |  *  |  (  |  )  |    |
-// |       |     |     |  {   |  (   |  [   |                   |  ]  |  )  |  }  |     |  \  |    |
-// |       |     |     |      |  =   |  +   |        |  |       |  _  |  -  |     |     |  |  |    |
+// |       |  !  |  @  |  #   |  $   |  %   |                   |  ^  |  &  |  *  |  (  |  )  |    |
+// |       |     |     |  {   |  (   |  [   |                   |  ]  |  )  |  }  |  `  |  \  |    |
+// |       |     |     |      |  =   |  +   |        |  |       |  _  |  -  |     |  ~  |  |  |    |
 //                     |      |      |      |        |  |       |     |     |     |
             label = "Raise";
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                    &trans    &trans    &trans          &trans    &trans    &trans
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &trans   
-&trans     &trans           &trans            &kp LBRC          &kp LPAR     &kp LBKT                        &kp RBKT  &kp RPAR  &kp RBRC        &trans    &kp BSLH  &trans
-&trans     &trans           &trans            &trans            &kp EQUAL    &kp PLUS     &trans   &trans    &kp UNDER &kp MINUS &trans          &trans    &kp PIPE  &trans  
+&trans     &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &trans   
+&trans     &trans           &trans            &kp LBRC          &kp LPAR     &kp LBKT                        &kp RBKT  &kp RPAR  &kp RBRC        &kp GRAVE &kp BSLH  &trans
+&trans     &trans           &trans            &trans            &kp EQUAL    &kp PLUS     &trans   &trans    &kp UNDER &kp MINUS &trans          &kp TILDE &kp PIPE  &trans  
                                               &trans            &trans       &trans       &trans   &trans    &trans    &trans    &trans
             >;
 
