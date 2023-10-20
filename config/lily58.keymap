@@ -90,14 +90,14 @@
 // --------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |     |     |     |     |     |     |
 // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^  |  &  |  *  |  (  |  )  |     |
-// |       |     |     |  {   |  (   |  [   |                   |  ]  |  )  |  }  |  `  |  "  |  \  |
+// |       |     |     |  {   |  (   |  [   |                   |  ]  |  )  |  }  |  `  |  \  |  "  |
 // |       |     |     |      |  =   |  +   |        |  |       |  _  |  -  |     |  ~  |  |  |     |
 //                     |      |      |      |        |  |       |     |     |     |
             label = "Raise";
             bindings = <
 &trans     &trans           &trans            &trans            &trans       &trans                          &trans    &trans    &trans          &trans    &trans    &trans
 &trans     &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &trans   
-&trans     &trans           &trans            &kp LBRC          &kp LPAR     &kp LBKT                        &kp RBKT  &kp RPAR  &kp RBRC        &kp GRAVE &kp DQT   &kp BSLH
+&trans     &trans           &trans            &kp LBRC          &kp LPAR     &kp LBKT                        &kp RBKT  &kp RPAR  &kp RBRC        &kp GRAVE &kp BSLH  &kp DQT 
 &trans     &trans           &trans            &trans            &kp EQUAL    &kp PLUS     &trans   &trans    &kp UNDER &kp MINUS &trans          &kp TILDE &kp PIPE  &trans  
                                               &trans            &trans       &trans       &trans   &trans    &trans    &trans    &trans
             >;
