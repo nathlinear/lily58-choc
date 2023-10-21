@@ -90,16 +90,16 @@
 // -----------------------------------------------------------------------------------------------------------
 // | BTCLR |  BT1  |  BT2  |  BT3  |  BT4   | BT5  |                   |     |     |     |     |     |     |
 // |       |   !   |   @   |   #   |   $    |  %   |                   |  ^  |  &  |  *  |  (  |  )  |  `  |
-// |       |       | RCLK  |  MUP  |  LCLK  | SCRU |                   |  -  |  =  |  {  |  }  |  \  |  "  |
-// |       |  MCLK | MLEFT | MDOWN | MRIGHT | SCRD |        |  |       |  _  |  +  |  [  |  ]  |  |  |  ~  |
+// |       |       |       |       |        |      |                   |  -  |  =  |  {  |  }  |  \  |  "  |
+// |       |       |       |       |        |      |        |  |       |  _  |  +  |  [  |  ]  |  |  |  ~  |
 //                         |       |        |      |        |  |       |     |     |     |
             label = "Raise";
             bindings = <
-&trans  &trans    &trans               &trans                &trans              &trans                                  &trans    &trans    &trans          &trans    &trans    &trans
-&trans  &kp EXCL  &kp AT               &kp HASH              &kp DOLLAR          &kp PRCNT                               &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp GRAVE
-&trans  &trans    &mkp RCLK            &mmv MOVE_VERT(-2500) &mkp LCLK           &mwh SCROLL_VERT(25)                    &kp MINUS &kp EQUAL &kp LBRC        &kp RBRC  &kp BSLH  &kp DQT 
-&trans  &mkp MCLK &mmv MOVE_HOR(-2500) &mmv MOVE_VERT(2500)  &mmv MOVE_HOR(2500) &mwh SCROLL_VERT(-25) &trans   &trans   &kp UNDER &kp PLUS  &kp LBKT        &kp RBKT  &kp PIPE  &kp TILDE
-                                       &trans                &trans              &trans                &trans   &trans   &trans    &trans    &trans
+&trans  &trans   &trans &trans   &trans     &trans                      &trans    &trans    &trans          &trans    &trans    &trans
+&trans  &kp EXCL &kp AT &kp HASH &kp DOLLAR &kp PRCNT                   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp GRAVE
+&trans  &trans   &trans &trans   &trans     &trans                      &kp MINUS &kp EQUAL &kp LBRC        &kp RBRC  &kp BSLH  &kp DQT 
+&trans  &trans   &trans &trans   &trans     &trans    &trans   &trans   &kp UNDER &kp PLUS  &kp LBKT        &kp RBKT  &kp PIPE  &kp TILDE
+                        &trans   &trans     &trans    &trans   &trans   &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
