@@ -47,7 +47,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <2 3>;
+            if-layers = <3 4>;
             then-layer = <6>;
         };
     };
