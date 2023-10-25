@@ -57,15 +57,15 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
         colemak_layer {
 // ---------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |   5   |                     |   6   |   7   |  8   |  9   |   0   | MINUS |
-// |  TAB  |  Q  |  W  |  F   |  P   |   G   |                     |   J   |   L   |  U   |  Y   |   ;   |   =   |
+// |  ESC  |  1  |  2  |  3   |  4   |   5   |                     |   6   |   7   |  8   |  9   |   0   | PGUP  |
+// |  TAB  |  Q  |  W  |  F   |  P   |   G   |                     |   J   |   L   |  U   |  Y   |   ;   | PGDN  |
 // |  CTRL |  A  |  R  |  S   |  T   |   D   |                     |   H   |   N   |  E   |  I   |   O   |   '   |
 // | SHIFT |  Z  |  X  |  C   |  V   |   B   | QWERTY |  | HOMEROW |   K   |   M   |  ,   |  .   |   /   | ENTER |
 //                     | LGUI | ALT  | SPACE | LOWER  |  |  RAISE  | BKSPC | MOUSE | RGUI |
             label = "Colemak";
             bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                            &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp MINUS
-&kp TAB   &kp Q  &kp W  &kp F    &kp P    &kp G                             &kp J  &kp L  &kp U     &kp Y   &kp SEMI &kp EQUAL
+&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                            &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp PG_UP
+&kp TAB   &kp Q  &kp W  &kp F    &kp P    &kp G                             &kp J  &kp L  &kp U     &kp Y   &kp SEMI &kp PG_DN
 &kp LCTRL &kp A  &kp R  &kp S    &kp T    &kp D                             &kp H  &kp N  &kp E     &kp I   &kp O    &kp SQT
 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &tog 1        &tog 2       &kp K  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
                         &kp LGUI &kp LALT &mo 3  &kp SPACE     &kp BSPC     &mo 4  &mo 5  &kp RGUI
@@ -91,15 +91,15 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
         homerow_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |  1  |  2  |  3   |  4   |   5   |                  |   6   |   7   |  8   |  9   |   0   | MINUS |
-// |       |  Q  |  W  |  F   |  P   |   G   |                  |   J   |   L   |  U   |  Y   |   ;   |   =   |
+// |       |  1  |  2  |  3   |  4   |   5   |                  |   6   |   7   |  8   |  9   |   0   |       |
+// |       |  Q  |  W  |  F   |  P   |   G   |                  |   J   |   L   |  U   |  Y   |   ;   |       |
 // |       |  A  |  R  |  S   |  T   |   D   |                  |   H   |   N   |  E   |  I   |   O   |   '   |
 // |       |  Z  |  X  |  C   |  V   |   B   |       |  |       |   K   |   M   |  ,   |  .   |   /   | ENTER |
 //                     |      |      |       |       |  |       |       |       |      |
             label = "Homerow";
             bindings = <
-&trans &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                &kp N6 &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-&trans &kp Q       &kp W       &kp F        &kp P        &kp G                 &kp J  &kp L        &kp U        &kp Y       &kp SEMI    &kp EQUAL
+&trans &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                &kp N6 &kp N7       &kp N8       &kp N9      &kp N0      &trans
+&trans &kp Q       &kp W       &kp F        &kp P        &kp G                 &kp J  &kp L        &kp U        &kp Y       &kp SEMI    &trans
 &trans &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHFT T &kp D                 &kp H  &hmr RSHFT N &hmr LCTRL E &hmr LALT I &hmr LGUI O &kp SQT
 &trans &kp Z       &kp X       &kp C        &kp V        &kp B  &trans  &trans &kp K  &kp M        &kp COMMA    &kp DOT     &kp FSLH    &trans 
                                &trans       &trans       &trans &trans  &trans &trans &trans       &trans  
