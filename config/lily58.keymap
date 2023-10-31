@@ -19,6 +19,10 @@
     acceleration-exponent = <1>;
 };
 
+&lt {
+    flavor = "balanced";
+}
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
