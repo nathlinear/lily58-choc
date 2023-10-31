@@ -21,8 +21,8 @@
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <160>
-}
+    tapping-term-ms = <160>;
+};
 
 / {
     conditional_layers {
