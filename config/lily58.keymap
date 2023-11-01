@@ -20,10 +20,9 @@
 };
 
 &lt {
-    flavor = "balanced";
-    tapping-term-ms = <150>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <120>;
     quick-tap-ms = <120>;
-    require-prior-idle-ms = <100>;
 };
 
 / {
